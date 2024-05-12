@@ -63,7 +63,7 @@ describe("Robot", () => {
   });
 
   // TEST MOVE FORWARD IN A VALID POSITION
-  describe("Robot executes F in a valid position", () => {
+  describe("Robot executes F towards a valid position", () => {
     it("moving N from x,y should return x,y+1 and same orientation", () => {
       const robot = new Robot(2, 4, Orientation.N, maxLimit, maxLimit);
       robot.executeSetOfInstructions("F", noScents);
