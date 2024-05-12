@@ -27,6 +27,8 @@ for (const [[x, y, orienation], instructions] of ROBOTS_INPUT) {
 }
 
 // Print final positions of each robot
+console.log("######### OUTPUT START #########\n");
 for (const robot of robots) {
   console.log(robot.toString());
 }
+console.log("\n########## OUTPUT END ##########");
