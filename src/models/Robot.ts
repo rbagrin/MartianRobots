@@ -45,6 +45,12 @@ export class Robot {
     }
   }
 
+  public toString(): string {
+    const output: (string | number)[] = [this.x, this.y, this.orientation];
+    if (this.hasFallen) output.push("LOST");
+    return output.join(" ");
+  }
+
   private executeSingleInstruction(direction: Direction, scents: Set<string>): void {
     // if robot is fallen - ignore instruction
     if (this.isFallen) return;
@@ -127,11 +133,5 @@ export class Robot {
     // no other thing should be marked
     this.x = newX;
     this.y = newY;
-  }
-
-  public toString(): string {
-    const output: (string | number)[] = [this.x, this.y, this.orientation];
-    if (this.hasFallen) output.push("LOST");
-    return output.join(" ");
   }
 }
