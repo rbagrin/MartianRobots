@@ -128,4 +128,10 @@ export class Robot {
     this.x = newX;
     this.y = newY;
   }
+
+  public toString(): string {
+    const output: (string | number)[] = [this.x, this.y, this.orientation];
+    if (this.hasFallen) output.push("LOST");
+    return output.join(" ");
+  }
 }

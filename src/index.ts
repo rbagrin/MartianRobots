@@ -28,12 +28,5 @@ for (const [[x, y, orienation], instructions] of ROBOTS_INPUT) {
 
 // Print final positions of each robot
 for (const robot of robots) {
-  let isLost = robot.hasFallen();
-  let coordinates = robot.getPosition();
-  let orienation = robot.getOrientation();
-
-  const output: (number | string)[] = [coordinates[0], coordinates[1], orienation];
-  if (isLost) output.push("LOST");
-
-  console.log(output.join(" "));
+  console.log(robot.toString());
 }
