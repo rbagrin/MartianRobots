@@ -6,7 +6,7 @@ Run `npm install` in the root of the project
 
 ## Configure project input
 
-In /src/index.ts, there is a section on the top of the file where you can set the Limist of the grid, the list of robots and their initial position and orientation + the instructions each robot should run.
+There is a section on the top of the **/src/index.ts** file where you can set the limits of the grid, the list of robots and their initial position and orientation + the instructions each robot should run. Set the _X_, _Y_ and the _ROBOTS_INPUT_ constants, then run the project.
 
 ### Example:
 
